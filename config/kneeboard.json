@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "aircraft": "F-100D Super Sabre",
+  "aircraft": "F-100D",
+  "kneeboardId": "F-100D",
   "profiles": {
     "moza-ab9": "src/Config/Input/F-100D/joystick/MOZA AB9 FFB Base {71DA6210-432E-11f1-8001-444553540000}.diff.lua",
     "tm-tpr": "src/Config/Input/F-100D/joystick/T-Pendular-Rudder {14ED3D40-3F58-11f1-8002-444553540000}.diff.lua",
@@ -22,14 +23,8 @@
         "moza-ab9-roll-axis": "Roll"
       },
       "controls": {
-        "moza-ab9-pitch-axis": {
-          "profile": "moza-ab9",
-          "key": "JOY_Y"
-        },
-        "moza-ab9-roll-axis": {
-          "profile": "moza-ab9",
-          "key": "JOY_X"
-        }
+        "moza-ab9-pitch-axis": { "profile": "moza-ab9", "key": "JOY_Y" },
+        "moza-ab9-roll-axis": { "profile": "moza-ab9", "key": "JOY_X" }
       }
     },
     {
@@ -44,18 +39,9 @@
         "tpr-axis-right-brake": "Wheel Brake Right"
       },
       "controls": {
-        "tpr-axis-rudder": {
-          "profile": "tm-tpr",
-          "key": "JOY_Z"
-        },
-        "tpr-axis-left-brake": {
-          "profile": "tm-tpr",
-          "key": "JOY_Y"
-        },
-        "tpr-axis-right-brake": {
-          "profile": "tm-tpr",
-          "key": "JOY_X"
-        }
+        "tpr-axis-rudder": { "profile": "tm-tpr", "key": "JOY_Z" },
+        "tpr-axis-left-brake": { "profile": "tm-tpr", "key": "JOY_Y" },
+        "tpr-axis-right-brake": { "profile": "tm-tpr", "key": "JOY_X" }
       }
     },
     {
@@ -75,38 +61,14 @@
         "warthog-thr-axis-friction": "Zoom View"
       },
       "controls": {
-        "warthog-thr-flaps-down": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN23"
-        },
-        "warthog-thr-flaps-up": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN22"
-        },
-        "warthog-thr-speedbrake-back": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN8"
-        },
-        "warthog-thr-speedbrake-forward": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN7"
-        },
-        "warthog-thr-left-throttle-button": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN15"
-        },
-        "warthog-thr-left-engine-idle-off": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN29"
-        },
-        "warthog-thr-axis-right-throttle": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_Z"
-        },
-        "warthog-thr-axis-friction": {
-          "profile": "tm-warthog-throttle",
-          "key": "JOY_SLIDER1"
-        }
+        "warthog-thr-flaps-down": { "profile": "tm-warthog-throttle", "key": "JOY_BTN23" },
+        "warthog-thr-flaps-up": { "profile": "tm-warthog-throttle", "key": "JOY_BTN22" },
+        "warthog-thr-speedbrake-back": { "profile": "tm-warthog-throttle", "key": "JOY_BTN8" },
+        "warthog-thr-speedbrake-forward": { "profile": "tm-warthog-throttle", "key": "JOY_BTN7" },
+        "warthog-thr-left-throttle-button": { "profile": "tm-warthog-throttle", "key": "JOY_BTN15" },
+        "warthog-thr-left-engine-idle-off": { "profile": "tm-warthog-throttle", "key": "JOY_BTN29" },
+        "warthog-thr-axis-right-throttle": { "profile": "tm-warthog-throttle", "key": "JOY_Z" },
+        "warthog-thr-axis-friction": { "profile": "tm-warthog-throttle", "key": "JOY_SLIDER1" }
       }
     },
     {
@@ -133,54 +95,18 @@
         {
           "id": "base",
           "controls": {
-            "viper-tqs-idle-detent": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN51"
-            },
-            "viper-tqs-uncage": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN6"
-            },
-            "viper-tqs-landing-gear": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN53"
-            },
-            "viper-tqs-speed-brake": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN9"
-            },
-            "viper-tqs-dogfight": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN5"
-            },
-            "viper-tqs-enable": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN16"
-            },
-            "viper-tqs-stores-cat": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN43"
-            },
-            "viper-tqs-dcs-switch": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN17"
-            },
-            "viper-tqs-rf": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_Z"
-            },
-            "viper-tqs-zoom": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_RZ"
-            },
-            "viper-tqs-range-antenna": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_RX"
-            },
-            "viper-tqs-radar-cursor": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_RY"
-            }
+            "viper-tqs-idle-detent": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN51" },
+            "viper-tqs-uncage": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN6" },
+            "viper-tqs-landing-gear": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN53" },
+            "viper-tqs-speed-brake": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN9" },
+            "viper-tqs-dogfight": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN5" },
+            "viper-tqs-enable": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN16" },
+            "viper-tqs-stores-cat": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN43" },
+            "viper-tqs-dcs-switch": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN17" },
+            "viper-tqs-rf": { "profile": "viper-tqs-mission-pack", "key": "JOY_Z" },
+            "viper-tqs-zoom": { "profile": "viper-tqs-mission-pack", "key": "JOY_RZ" },
+            "viper-tqs-range-antenna": { "profile": "viper-tqs-mission-pack", "key": "JOY_RX" },
+            "viper-tqs-radar-cursor": { "profile": "viper-tqs-mission-pack", "key": "JOY_RY" }
           },
           "labels": {
             "viper-tqs-idle-detent": "Air Start Switch Cover - CLOSE",
@@ -201,14 +127,9 @@
           "id": "LCtrl",
           "file": "04-VIPER-TQS-MISSION-PACK-LCtrl",
           "title": "Viper TQS • LCtrl",
-          "modifiers": [
-            "LCtrl"
-          ],
+          "modifiers": ["LCtrl"],
           "controls": {
-            "viper-tqs-stores-cat": {
-              "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN43"
-            }
+            "viper-tqs-stores-cat": { "profile": "viper-tqs-mission-pack", "key": "JOY_BTN43" }
           },
           "labels": {
             "viper-tqs-stores-cat": "Course Set Knob - CCW"
@@ -235,46 +156,16 @@
         "vkb-sw4": "Mode Selector Knob - OFF"
       },
       "controls": {
-        "vkb-hat": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN11"
-        },
-        "vkb-pinky": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN7"
-        },
-        "vkb-btn-red": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN3"
-        },
-        "vkb-stage1": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN1"
-        },
-        "vkb-btn-a": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN5"
-        },
-        "vkb-sw3": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN15"
-        },
-        "vkb-castle": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN4"
-        },
-        "vkb-sw1": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN13"
-        },
-        "vkb-sw2": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN14"
-        },
-        "vkb-sw4": {
-          "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN16"
-        }
+        "vkb-hat": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN11" },
+        "vkb-pinky": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN7" },
+        "vkb-btn-red": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN3" },
+        "vkb-stage1": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN1" },
+        "vkb-btn-a": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN5" },
+        "vkb-sw3": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN15" },
+        "vkb-castle": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN4" },
+        "vkb-sw1": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN13" },
+        "vkb-sw2": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN14" },
+        "vkb-sw4": { "profile": "vkb-f14-gunfighter", "key": "JOY_BTN16" }
       }
     },
     {
@@ -305,70 +196,22 @@
         {
           "id": "base",
           "controls": {
-            "pto2-button-12": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN12"
-            },
-            "pto2-button-34": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN34"
-            },
-            "pto2-button-7": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN7"
-            },
-            "pto2-button-5": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN5"
-            },
-            "pto2-button-1": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN1"
-            },
-            "pto2-button-28": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN28"
-            },
-            "pto2-button-31": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN31"
-            },
-            "pto2-button-29": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN29"
-            },
-            "pto2-button-37": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN37"
-            },
-            "pto2-button-35": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN35"
-            },
-            "pto2-button-11": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN11"
-            },
-            "pto2-button-10": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN10"
-            },
-            "pto2-button-22": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN22"
-            },
-            "pto2-button-8": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN8"
-            },
-            "pto2-button-2": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN2"
-            },
-            "pto2-button-17": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN17"
-            }
+            "pto2-button-12": { "profile": "winctrl-pto2", "key": "JOY_BTN12" },
+            "pto2-button-34": { "profile": "winctrl-pto2", "key": "JOY_BTN34" },
+            "pto2-button-7": { "profile": "winctrl-pto2", "key": "JOY_BTN7" },
+            "pto2-button-5": { "profile": "winctrl-pto2", "key": "JOY_BTN5" },
+            "pto2-button-1": { "profile": "winctrl-pto2", "key": "JOY_BTN1" },
+            "pto2-button-28": { "profile": "winctrl-pto2", "key": "JOY_BTN28" },
+            "pto2-button-31": { "profile": "winctrl-pto2", "key": "JOY_BTN31" },
+            "pto2-button-29": { "profile": "winctrl-pto2", "key": "JOY_BTN29" },
+            "pto2-button-37": { "profile": "winctrl-pto2", "key": "JOY_BTN37" },
+            "pto2-button-35": { "profile": "winctrl-pto2", "key": "JOY_BTN35" },
+            "pto2-button-11": { "profile": "winctrl-pto2", "key": "JOY_BTN11" },
+            "pto2-button-10": { "profile": "winctrl-pto2", "key": "JOY_BTN10" },
+            "pto2-button-22": { "profile": "winctrl-pto2", "key": "JOY_BTN22" },
+            "pto2-button-8": { "profile": "winctrl-pto2", "key": "JOY_BTN8" },
+            "pto2-button-2": { "profile": "winctrl-pto2", "key": "JOY_BTN2" },
+            "pto2-button-17": { "profile": "winctrl-pto2", "key": "JOY_BTN17" }
           },
           "labels": {
             "pto2-button-12": "ZELL Raise To Start Position",
@@ -393,14 +236,9 @@
           "id": "LCtrl",
           "file": "06-WINCTRL-PTO2-LCtrl",
           "title": "WINCTRL CarrierAce PTO 2 • LCtrl",
-          "modifiers": [
-            "LCtrl"
-          ],
+          "modifiers": ["LCtrl"],
           "controls": {
-            "pto2-button-10": {
-              "profile": "winctrl-pto2",
-              "key": "JOY_BTN10"
-            }
+            "pto2-button-10": { "profile": "winctrl-pto2", "key": "JOY_BTN10" }
           },
           "labels": {
             "pto2-button-10": "Anti-Skid Switch - TEST"
@@ -422,66 +260,24 @@
         "winctrl-icp-com1": "Missile Volume"
       },
       "controls": {
-        "winctrl-icp-a-a": {
-          "profile": "winctrl-icp",
-          "key": "JOY_BTN6"
-        },
-        "winctrl-icp-iff": {
-          "profile": "winctrl-icp",
-          "key": "JOY_RX"
-        },
-        "winctrl-icp-list": {
-          "profile": "winctrl-icp",
-          "key": "JOY_RY"
-        },
-        "winctrl-icp-com2": {
-          "profile": "winctrl-icp",
-          "key": "JOY_Y"
-        },
-        "winctrl-icp-com1": {
-          "profile": "winctrl-icp",
-          "key": "JOY_X"
-        }
+        "winctrl-icp-a-a": { "profile": "winctrl-icp", "key": "JOY_BTN6" },
+        "winctrl-icp-iff": { "profile": "winctrl-icp", "key": "JOY_RX" },
+        "winctrl-icp-list": { "profile": "winctrl-icp", "key": "JOY_RY" },
+        "winctrl-icp-com2": { "profile": "winctrl-icp", "key": "JOY_Y" },
+        "winctrl-icp-com1": { "profile": "winctrl-icp", "key": "JOY_X" }
       }
     }
   ],
   "modifiersFile": "src/Config/Input/F-100D/modifiers.lua",
   "modifiers": {
-    "JOY_BTN13": {
-      "nativeName": "JOY_BTN13",
-      "mode": "hold"
-    },
-    "LAlt": {
-      "nativeName": "LAlt",
-      "mode": "hold"
-    },
-    "LCtrl": {
-      "nativeName": "LCtrl",
-      "mode": "hold"
-    },
-    "LShift": {
-      "nativeName": "LShift",
-      "mode": "hold"
-    },
-    "LWin": {
-      "nativeName": "LWin",
-      "mode": "hold"
-    },
-    "RAlt": {
-      "nativeName": "RAlt",
-      "mode": "hold"
-    },
-    "RCtrl": {
-      "nativeName": "RCtrl",
-      "mode": "hold"
-    },
-    "RShift": {
-      "nativeName": "RShift",
-      "mode": "hold"
-    },
-    "RWin": {
-      "nativeName": "RWin",
-      "mode": "hold"
-    }
+    "JOY_BTN13": { "nativeName": "JOY_BTN13", "mode": "hold" },
+    "LAlt": { "nativeName": "LAlt", "mode": "hold" },
+    "LCtrl": { "nativeName": "LCtrl", "mode": "hold" },
+    "LShift": { "nativeName": "LShift", "mode": "hold" },
+    "LWin": { "nativeName": "LWin", "mode": "hold" },
+    "RAlt": { "nativeName": "RAlt", "mode": "hold" },
+    "RCtrl": { "nativeName": "RCtrl", "mode": "hold" },
+    "RShift": { "nativeName": "RShift", "mode": "hold" },
+    "RWin": { "nativeName": "RWin", "mode": "hold" }
   }
 }
