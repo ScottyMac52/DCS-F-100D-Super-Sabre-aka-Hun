@@ -4,7 +4,7 @@ param(
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $dist = Join-Path $root 'dist'
-$pkgName = 'DCS-F-100D-Super-Sabre-Components'
+$pkgName = 'DCS-F-100D-Components'
 $ovgme = Join-Path $dist "$pkgName-$Version-OVGME.zip"
 if (-not (Test-Path $ovgme)) { throw "Missing OVGME zip $ovgme" }
 $stage = Join-Path $dist "release-stage-$Version"

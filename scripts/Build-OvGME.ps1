@@ -7,7 +7,7 @@ $dist = Join-Path $root 'dist'
 New-Item -ItemType Directory -Force -Path $dist | Out-Null
 $stage = Join-Path $dist "stage-$Version"
 if (Test-Path $stage) { Remove-Item $stage -Recurse -Force }
-$pkgName = 'DCS-F-100D-Super-Sabre-Components'
+$pkgName = 'DCS-F-100D-Components'
 $pkg = Join-Path $stage $pkgName
 New-Item -ItemType Directory -Force -Path (Join-Path $pkg "Config/Input/F-100D/joystick") | Out-Null
 Copy-Item (Join-Path $root 'src/Config/Input/F-100D/joystick/*') (Join-Path $pkg "Config/Input/F-100D/joystick/") -Force

@@ -28,11 +28,11 @@ jobs:
       test-package-script: scripts/Test-Package.ps1
       build-release-script: scripts/Build-Release.ps1
       test-release-script: scripts/Test-Package.ps1
-      artifact-name: F-100D-Super-Sabre-Release-${{ inputs.bump }}-${{ github.run_number }}
+      artifact-name: F-100D-Release-${{ inputs.bump }}-${{ github.run_number }}
       artifact-path: |
         dist/*.zip
         dist/SHA256SUMS.txt
       release-notes-path: packaging/release/RELEASE-NOTES.md
       kneeboard-paths: kneeboard/source kneeboard/F-100D
-      release-title-prefix: DCS-F-100D-Super-Sabre-Components
+      release-title-prefix: DCS-F-100D-Components
     secrets: inherit

@@ -4,7 +4,7 @@ param(
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $dist = Join-Path $root 'dist'
-$pkgName = 'DCS-F-100D-Super-Sabre-Components'
+$pkgName = 'DCS-F-100D-Components'
 $zip = Join-Path $dist "$pkgName-$Version-OVGME.zip"
 if (-not (Test-Path $zip)) { throw "Missing package $zip" }
 $sums = Get-Content (Join-Path $dist 'SHA256SUMS.txt')

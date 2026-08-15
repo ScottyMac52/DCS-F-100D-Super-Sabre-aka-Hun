@@ -26,7 +26,7 @@ jobs:
       # Skipped automatically on pull_request; runs on main push / workflow_dispatch.
       commit-kneeboard: true
       kneeboard-paths: kneeboard/source kneeboard/F-100D
-      artifact-name: F-100D-Super-Sabre-Release
+      artifact-name: F-100D-Release
       artifact-path: |
         dist/*.zip
         dist/SHA256SUMS.txt

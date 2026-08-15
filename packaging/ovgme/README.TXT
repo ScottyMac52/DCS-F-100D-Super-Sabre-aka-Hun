@@ -1,4 +1,4 @@
-DCS-F-100D-Super-Sabre-Components OVGME package version {{VERSION}}
+DCS-F-100D-Components OVGME package version {{VERSION}}
 
 Install relative to your DCS Saved Games root.
 Input module: F-100D

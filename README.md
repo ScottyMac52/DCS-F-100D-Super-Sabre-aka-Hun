@@ -1,10 +1,10 @@
-# DCS-F-100D-Super-Sabre-Components
+# DCS-F-100D-Components
 
 Scaffolded by **DCS Input Profile Importer** (DCS-Common).
 
 | Identity | Value |
 | --- | --- |
-| Display name | F-100D Super Sabre |
+| Display name | F-100D |
 | DCS input module | `F-100D` |
 | Kneeboard folder | `F-100D` |
 
