@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "aircraft": "F-100D",
+  "includeUiLayer": true,
   "profiles": {
     "moza-ab9": "src/Config/Input/F-100D/joystick/MOZA AB9 FFB Base {71DA6210-432E-11f1-8001-444553540000}.diff.lua",
     "tm-tpr": "src/Config/Input/F-100D/joystick/T-Pendular-Rudder {14ED3D40-3F58-11f1-8002-444553540000}.diff.lua",
@@ -13,57 +14,75 @@
   "pages": [
     {
       "file": "01-MOZA-AB9",
+      "includeUiLayer": true,
       "deviceId": "moza-ab9",
+      "deviceInstance": null,
       "title": "MOZA AB9 FFB Base",
       "kicker": "SCAFFOLD DRAFT",
-      "_comment": "labels are pre-filled from DCS binding names via controls. Edit any string to override display text; keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
+      "_comment": "labels default to the imported DCS command name and remain editable; deviceLabel contains the canonical DCS-Common hardware label. keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
       "labels": {
         "moza-ab9-pitch-axis": "Pitch",
         "moza-ab9-roll-axis": "Roll"
       },
+      "modifierCallouts": {},
       "controls": {
         "moza-ab9-pitch-axis": {
           "profile": "moza-ab9",
-          "key": "JOY_Y"
+          "key": "JOY_Y",
+          "command": "a2001cdnil",
+          "label": "Pitch"
         },
         "moza-ab9-roll-axis": {
           "profile": "moza-ab9",
-          "key": "JOY_X"
+          "key": "JOY_X",
+          "command": "a2002cdnil",
+          "label": "Roll"
         }
       }
     },
     {
       "file": "02-TM-TPR",
+      "includeUiLayer": true,
       "deviceId": "tm-tpr",
+      "deviceInstance": null,
       "title": "T-Pendular-Rudder",
       "kicker": "SCAFFOLD DRAFT",
-      "_comment": "labels are pre-filled from DCS binding names via controls. Edit any string to override display text; keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
+      "_comment": "labels default to the imported DCS command name and remain editable; deviceLabel contains the canonical DCS-Common hardware label. keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
       "labels": {
         "tpr-axis-rudder": "Rudder",
         "tpr-axis-left-brake": "Wheel Brake Left",
         "tpr-axis-right-brake": "Wheel Brake Right"
       },
+      "modifierCallouts": {},
       "controls": {
         "tpr-axis-rudder": {
           "profile": "tm-tpr",
-          "key": "JOY_Z"
+          "key": "JOY_Z",
+          "command": "a2003cdnil",
+          "label": "Rudder"
         },
         "tpr-axis-left-brake": {
           "profile": "tm-tpr",
-          "key": "JOY_Y"
+          "key": "JOY_Y",
+          "command": "a3006cd9",
+          "label": "Wheel Brake Left"
         },
         "tpr-axis-right-brake": {
           "profile": "tm-tpr",
-          "key": "JOY_X"
+          "key": "JOY_X",
+          "command": "a3007cd9",
+          "label": "Wheel Brake Right"
         }
       }
     },
     {
       "file": "03-TM-WARTHOG-THROTTLE",
+      "includeUiLayer": true,
       "deviceId": "tm-warthog-throttle",
+      "deviceInstance": null,
       "title": "Throttle - HOTAS Warthog",
       "kicker": "SCAFFOLD DRAFT",
-      "_comment": "labels are pre-filled from DCS binding names via controls. Edit any string to override display text; keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
+      "_comment": "labels default to the imported DCS command name and remain editable; deviceLabel contains the canonical DCS-Common hardware label. keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
       "labels": {
         "warthog-thr-flaps-down": "Wing Flap - DOWN else HALF",
         "warthog-thr-flaps-up": "Wing Flap - UP else HALF",
@@ -74,47 +93,66 @@
         "warthog-thr-axis-right-throttle": "Thrust",
         "warthog-thr-axis-friction": "Zoom View"
       },
+      "modifierCallouts": {},
       "controls": {
         "warthog-thr-flaps-down": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN23"
+          "key": "JOY_BTN23",
+          "command": "d3001pnilu3001cd9vd-1vpnilvu0",
+          "label": "Wing Flap - DOWN else HALF"
         },
         "warthog-thr-flaps-up": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN22"
+          "key": "JOY_BTN22",
+          "command": "d3001pnilu3001cd9vd1vpnilvu0",
+          "label": "Wing Flap - UP else HALF"
         },
         "warthog-thr-speedbrake-back": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN8"
+          "key": "JOY_BTN8",
+          "command": "d3008pnilu3008cd9vd-1vpnilvu0",
+          "label": "Speed Brake Switch - EXTEND else CENTER"
         },
         "warthog-thr-speedbrake-forward": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN7"
+          "key": "JOY_BTN7",
+          "command": "d3008pnilu3008cd9vd1vpnilvu0",
+          "label": "Speed Brake Switch - RETRACT else CENTER"
         },
         "warthog-thr-left-throttle-button": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN15"
+          "key": "JOY_BTN15",
+          "command": "d3013pnilu3013cd25vd1vpnilvu0",
+          "label": "Sight Electrical Cage"
         },
         "warthog-thr-left-engine-idle-off": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_BTN29"
+          "key": "JOY_BTN29",
+          "command": "d3021pnilu3021cd10vd-1vpnilvu1",
+          "label": "Throttle Detent - CUTOFF else IDLE"
         },
         "warthog-thr-axis-right-throttle": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_Z"
+          "key": "JOY_Z",
+          "command": "a2004cdnil",
+          "label": "Thrust"
         },
         "warthog-thr-axis-friction": {
           "profile": "tm-warthog-throttle",
-          "key": "JOY_SLIDER1"
+          "key": "JOY_SLIDER1",
+          "command": "a2012cdnil",
+          "label": "Zoom View"
         }
       }
     },
     {
       "file": "04-VIPER-TQS-MISSION-PACK",
+      "includeUiLayer": true,
       "deviceId": "viper-tqs-mission-pack",
+      "deviceInstance": null,
       "title": "Viper TQS",
       "kicker": "SCAFFOLD DRAFT",
-      "_comment": "labels are pre-filled from DCS binding names via controls. Edit any string to override display text; keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
+      "_comment": "labels default to the imported DCS command name and remain editable; deviceLabel contains the canonical DCS-Common hardware label. keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
       "labels": {
         "viper-tqs-button-51": "Air Start Switch Cover - CLOSE",
         "viper-tqs-button-50": "Air Start Switch Cover - OPEN",
@@ -133,73 +171,106 @@
         "viper-tqs-axis-rx": "Manual Range Adjust",
         "viper-tqs-axis-ry": "UHF Radio Volume"
       },
+      "modifierCallouts": {},
       "layers": [
         {
           "id": "base",
           "controls": {
             "viper-tqs-button-51": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN51"
+              "key": "JOY_BTN51",
+              "command": "d3005pnilunilcd10vd0vpnilvunil",
+              "label": "Air Start Switch Cover - CLOSE"
             },
             "viper-tqs-button-50": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN50"
+              "key": "JOY_BTN50",
+              "command": "d3005pnilunilcd10vd1vpnilvunil",
+              "label": "Air Start Switch Cover - OPEN"
             },
             "viper-tqs-button-06": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN6"
+              "key": "JOY_BTN6",
+              "command": "d3005pnilunilcd25vd1vpnilvunil",
+              "label": "Sight Mechanical Cage Lever - TOGGLE"
             },
             "viper-tqs-button-53": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN53"
+              "key": "JOY_BTN53",
+              "command": "d3007pnilunilcd10vd0vpnilvunil",
+              "label": "Air Start Switch - OFF"
             },
             "viper-tqs-button-52": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN52"
+              "key": "JOY_BTN52",
+              "command": "d3007pnilunilcd10vd1vpnilvunil",
+              "label": "Air Start Switch - ON"
             },
             "viper-tqs-button-09": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN9"
+              "key": "JOY_BTN9",
+              "command": "d3008pnilu3008cd9vd-1vpnilvu0",
+              "label": "Speed Brake Switch - EXTEND else CENTER"
             },
             "viper-tqs-button-10": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN10"
+              "key": "JOY_BTN10",
+              "command": "d3008pnilu3008cd9vd1vpnilvu0",
+              "label": "Speed Brake Switch - RETRACT else CENTER"
             },
             "viper-tqs-button-05": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN5"
+              "key": "JOY_BTN5",
+              "command": "d3012pnilunilcd10vd1vpnilvunil",
+              "label": "Afterburner - TOGGLE"
             },
             "viper-tqs-button-16": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN16"
+              "key": "JOY_BTN16",
+              "command": "d3013pnilu3013cd25vd1vpnilvu0",
+              "label": "Sight Electrical Cage"
             },
             "viper-tqs-button-43": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN43"
+              "key": "JOY_BTN43",
+              "command": "d3024pnilunilcd15vd-1vpnilvunil",
+              "label": "Armmament Selector Knob - CCW/Decrease"
             },
             "viper-tqs-button-42": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN42"
+              "key": "JOY_BTN42",
+              "command": "d3024pnilunilcd15vd1vpnilvunil",
+              "label": "Armmament Selector Knob - CW/Increase"
             },
             "viper-tqs-button-17": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN17"
+              "key": "JOY_BTN17",
+              "command": "d3025pnilunilcd15vd0.2vpnilvunil",
+              "label": "Mode Selector Knob - MANUAL"
             },
             "viper-tqs-axis-z": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_Z"
+              "key": "JOY_Z",
+              "command": "a2004cdnil",
+              "label": "Thrust"
             },
             "viper-tqs-axis-rz": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_RZ"
+              "key": "JOY_RZ",
+              "command": "a2012cdnil",
+              "label": "Zoom View"
             },
             "viper-tqs-axis-rx": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_RX"
+              "key": "JOY_RX",
+              "command": "a3011cd25",
+              "label": "Manual Range Adjust"
             },
             "viper-tqs-axis-ry": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_RY"
+              "key": "JOY_RY",
+              "command": "a3017cd4",
+              "label": "UHF Radio Volume"
             }
           },
           "labels": {
@@ -225,17 +296,27 @@
           "id": "LCtrl",
           "file": "04-VIPER-TQS-MISSION-PACK-LCtrl",
           "title": "Viper TQS • LCtrl",
-          "modifiers": [
+          "activators": [
             "LCtrl"
           ],
           "controls": {
             "viper-tqs-button-43": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN43"
+              "key": "JOY_BTN43",
+              "command": "dnilp3011unilcd3vdnilvp-0.75vunil",
+              "label": "Course Set Knob - CCW",
+              "modifiers": [
+                "LCtrl"
+              ]
             },
             "viper-tqs-button-42": {
               "profile": "viper-tqs-mission-pack",
-              "key": "JOY_BTN42"
+              "key": "JOY_BTN42",
+              "command": "dnilp3011unilcd3vdnilvp0.75vunil",
+              "label": "Course Set Knob - CW",
+              "modifiers": [
+                "LCtrl"
+              ]
             }
           },
           "labels": {
@@ -247,12 +328,17 @@
     },
     {
       "file": "05-VKB-F14-GUNFIGHTER",
+      "includeUiLayer": true,
       "deviceId": "vkb-f14-gunfighter",
+      "deviceInstance": null,
       "title": "VKBSim Gunfighter F14",
       "kicker": "SCAFFOLD DRAFT",
-      "_comment": "labels are pre-filled from DCS binding names via controls. Edit any string to override display text; keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
+      "_comment": "labels default to the imported DCS command name and remain editable; deviceLabel contains the canonical DCS-Common hardware label. keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
       "labels": {
-        "vkb-hat": "Trim - Nose UP",
+        "vkb-trim-down": "Trim - Nose UP",
+        "vkb-trim-up": "Trim - Nose DOWN",
+        "vkb-trim-left": "Trim - Roll LEFT",
+        "vkb-trim-right": "Trim - Roll RIGHT",
         "vkb-nws": "Nose Wheel Steering (NWS)",
         "vkb-btn-release": "Weapon Release Button",
         "vkb-trigger": "Gun Trigger - SECOND DETENT (Press to shoot)",
@@ -263,55 +349,96 @@
         "vkb-sw2": "Mode Selector Knob - LADD",
         "vkb-sw4": "Mode Selector Knob - OFF"
       },
+      "modifierCallouts": {},
       "controls": {
-        "vkb-hat": {
+        "vkb-trim-down": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN11"
+          "key": "JOY_BTN11",
+          "command": "d3003pnilu3003cd20vd-1vpnilvu0",
+          "label": "Trim - Nose UP"
+        },
+        "vkb-trim-up": {
+          "profile": "vkb-f14-gunfighter",
+          "key": "JOY_BTN10",
+          "command": "d3004pnilu3004cd20vd1vpnilvu0",
+          "label": "Trim - Nose DOWN"
+        },
+        "vkb-trim-left": {
+          "profile": "vkb-f14-gunfighter",
+          "key": "JOY_BTN12",
+          "command": "d3006pnilu3006cd20vd-1vpnilvu0",
+          "label": "Trim - Roll LEFT"
+        },
+        "vkb-trim-right": {
+          "profile": "vkb-f14-gunfighter",
+          "key": "JOY_BTN9",
+          "command": "d3007pnilu3007cd20vd1vpnilvu0",
+          "label": "Trim - Roll RIGHT"
         },
         "vkb-nws": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN7"
+          "key": "JOY_BTN7",
+          "command": "d3010pnilu3010cd9vd1vpnilvu0",
+          "label": "Nose Wheel Steering (NWS)"
         },
         "vkb-btn-release": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN3"
+          "key": "JOY_BTN3",
+          "command": "d3014pnilu3014cd15vd1vpnilvu0",
+          "label": "Weapon Release Button"
         },
         "vkb-trigger": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN1"
+          "key": "JOY_BTN1",
+          "command": "d3016pnilu3016cd15vd1vpnilvu0",
+          "label": "Gun Trigger - SECOND DETENT (Press to shoot)"
         },
         "vkb-btn-dlc": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN5"
+          "key": "JOY_BTN5",
+          "command": "d3025pnilu3025cd25vd1vpnilvu0",
+          "label": "Radar Reject Button"
         },
         "vkb-sw3": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN15"
+          "key": "JOY_BTN15",
+          "command": "d3025pnilunilcd15vd0.1vpnilvunil",
+          "label": "Mode Selector Knob - SIGHT & RADAR"
         },
         "vkb-pinky": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN4"
+          "key": "JOY_BTN4",
+          "command": "d3025pnilunilcd15vd0.3vpnilvunil",
+          "label": "Mode Selector Knob - LABS"
         },
         "vkb-sw1": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN13"
+          "key": "JOY_BTN13",
+          "command": "d3025pnilunilcd15vd0.4vpnilvunil",
+          "label": "Mode Selector Knob - LABS ALT"
         },
         "vkb-sw2": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN14"
+          "key": "JOY_BTN14",
+          "command": "d3025pnilunilcd15vd0.5vpnilvunil",
+          "label": "Mode Selector Knob - LADD"
         },
         "vkb-sw4": {
           "profile": "vkb-f14-gunfighter",
-          "key": "JOY_BTN16"
+          "key": "JOY_BTN16",
+          "command": "d3025pnilunilcd15vd0vpnilvunil",
+          "label": "Mode Selector Knob - OFF"
         }
       }
     },
     {
       "file": "06-WINCTRL-PTO2",
+      "includeUiLayer": true,
       "deviceId": "winctrl-pto2",
+      "deviceInstance": null,
       "title": "WINCTRL CarrierAce PTO 2",
       "kicker": "SCAFFOLD DRAFT",
-      "_comment": "labels are pre-filled from DCS binding names via controls. Edit any string to override display text; keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
+      "_comment": "labels default to the imported DCS command name and remain editable; deviceLabel contains the canonical DCS-Common hardware label. keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
       "labels": {
         "pto2-button-12": "ZELL Raise To Start Position",
         "pto2-button-34": "Tail Hook Release Button",
@@ -330,73 +457,106 @@
         "pto2-button-2": "Warning System Cutout Button",
         "pto2-button-17": "Emergency Jettison Handle Cover - UNLOCK else LOCK"
       },
+      "modifierCallouts": {},
       "layers": [
         {
           "id": "base",
           "controls": {
             "pto2-button-12": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN12"
+              "key": "JOY_BTN12",
+              "command": "d1938pnilunilcdnilvdnilvpnilvunil",
+              "label": "ZELL Raise To Start Position"
             },
             "pto2-button-34": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN34"
+              "key": "JOY_BTN34",
+              "command": "d3001pnilu3001cd32vd1vpnilvu0",
+              "label": "Tail Hook Release Button"
             },
             "pto2-button-7": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN7"
+              "key": "JOY_BTN7",
+              "command": "d3001pnilu3001cd9vd-1vpnilvu0",
+              "label": "Wing Flap - DOWN else HALF"
             },
             "pto2-button-5": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN5"
+              "key": "JOY_BTN5",
+              "command": "d3001pnilu3001cd9vd1vpnilvu0",
+              "label": "Wing Flap - UP else HALF"
             },
             "pto2-button-1": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN1"
+              "key": "JOY_BTN1",
+              "command": "d3001pnilunilcd35vd1vpnilvunil",
+              "label": "ZELL Launch"
             },
             "pto2-button-28": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN28"
+              "key": "JOY_BTN28",
+              "command": "d3001pnilunilcd37vd-1vpnilvunil",
+              "label": "Drag Chute Handle - Stow"
             },
             "pto2-button-31": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN31"
+              "key": "JOY_BTN31",
+              "command": "d3001pnilunilcd37vd0vpnilvunil",
+              "label": "Drag Chute Handle - Deploy"
             },
             "pto2-button-29": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN29"
+              "key": "JOY_BTN29",
+              "command": "d3001pnilunilcd37vd1vpnilvunil",
+              "label": "Drag Chute Handle - Release"
             },
             "pto2-button-37": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN37"
+              "key": "JOY_BTN37",
+              "command": "d3003pnilunilcd9vd0vpnilvunil",
+              "label": "Landing Gear Lever - DOWN"
             },
             "pto2-button-35": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN35"
+              "key": "JOY_BTN35",
+              "command": "d3003pnilunilcd9vd1vpnilvunil",
+              "label": "Landing Gear Lever - UP"
             },
             "pto2-button-11": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN11"
+              "key": "JOY_BTN11",
+              "command": "d3011pnilunilcd9vd-1vpnilvunil",
+              "label": "Anti-Skid Switch - OFF"
             },
             "pto2-button-10": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN10"
+              "key": "JOY_BTN10",
+              "command": "d3011pnilunilcd9vd0vpnilvunil",
+              "label": "Anti-Skid Switch - ON"
             },
             "pto2-button-22": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN22"
+              "key": "JOY_BTN22",
+              "command": "d3012pnilu3012cd15vd1vpnilvu0",
+              "label": "Emergency Jettison Button"
             },
             "pto2-button-8": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN8"
+              "key": "JOY_BTN8",
+              "command": "d3023pnilu3023cd21vd1vpnilvu0",
+              "label": "Taxi & Landing Lights - ON else OFF"
             },
             "pto2-button-2": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN2"
+              "key": "JOY_BTN2",
+              "command": "d3034pnilu3034cd9vd1vpnilvu0",
+              "label": "Warning System Cutout Button"
             },
             "pto2-button-17": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN17"
+              "key": "JOY_BTN17",
+              "command": "d3065pnilu3065cd15vd1vpnilvu0",
+              "label": "Emergency Jettison Handle Cover - UNLOCK else LOCK"
             }
           },
           "labels": {
@@ -422,13 +582,18 @@
           "id": "LCtrl",
           "file": "06-WINCTRL-PTO2-LCtrl",
           "title": "WINCTRL CarrierAce PTO 2 • LCtrl",
-          "modifiers": [
+          "activators": [
             "LCtrl"
           ],
           "controls": {
             "pto2-button-10": {
               "profile": "winctrl-pto2",
-              "key": "JOY_BTN10"
+              "key": "JOY_BTN10",
+              "command": "d3012pnilu3012cd9vd1vpnilvu0",
+              "label": "Anti-Skid Switch - TEST",
+              "modifiers": [
+                "LCtrl"
+              ]
             }
           },
           "labels": {
@@ -439,10 +604,12 @@
     },
     {
       "file": "07-WINCTRL-ICP",
+      "includeUiLayer": true,
       "deviceId": "winctrl-icp",
+      "deviceInstance": null,
       "title": "WINCTRL ViperAce ICP",
       "kicker": "SCAFFOLD DRAFT",
-      "_comment": "labels are pre-filled from DCS binding names via controls. Edit any string to override display text; keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
+      "_comment": "labels default to the imported DCS command name and remain editable; deviceLabel contains the canonical DCS-Common hardware label. keep callout IDs in sync with controls. You can also set \"label\" on a controls entry.",
       "labels": {
         "winctrl-icp-btn-06": "Gun Selector Switch - ALL",
         "winctrl-icp-axis-rx": "TACAN Volume Knob",
@@ -450,67 +617,170 @@
         "winctrl-icp-axis-y": "ADF Radio Volume Knob",
         "winctrl-icp-axis-x": "Missile Volume"
       },
+      "modifierCallouts": {},
       "controls": {
         "winctrl-icp-btn-06": {
           "profile": "winctrl-icp",
-          "key": "JOY_BTN6"
+          "key": "JOY_BTN6",
+          "command": "d3001pnilunilcd15vd0.3vpnilvunil",
+          "label": "Gun Selector Switch - ALL"
         },
         "winctrl-icp-axis-rx": {
           "profile": "winctrl-icp",
-          "key": "JOY_RX"
+          "key": "JOY_RX",
+          "command": "a3004cd3",
+          "label": "TACAN Volume Knob"
         },
         "winctrl-icp-axis-ry": {
           "profile": "winctrl-icp",
-          "key": "JOY_RY"
+          "key": "JOY_RY",
+          "command": "a3013cd36",
+          "label": "RHAW Audio Adjust"
         },
         "winctrl-icp-axis-y": {
           "profile": "winctrl-icp",
-          "key": "JOY_Y"
+          "key": "JOY_Y",
+          "command": "a3013cd5",
+          "label": "ADF Radio Volume Knob"
         },
         "winctrl-icp-axis-x": {
           "profile": "winctrl-icp",
-          "key": "JOY_X"
+          "key": "JOY_X",
+          "command": "a3055cd15",
+          "label": "Missile Volume"
         }
       }
     }
   ],
+  "semanticModifiers": {
+    "JOY_BTN13": [
+      {
+        "nativeName": "JOY_BTN13",
+        "device": "F16 MFD 1 {51FA60C0-CB32-11ed-800B-444553540000}",
+        "key": "JOY_BTN13",
+        "mode": "hold"
+      }
+    ],
+    "LAlt": [
+      {
+        "nativeName": "LAlt",
+        "device": "Keyboard",
+        "key": "LAlt",
+        "mode": "hold"
+      }
+    ],
+    "LCtrl": [
+      {
+        "nativeName": "LCtrl",
+        "device": "Keyboard",
+        "key": "LCtrl",
+        "mode": "hold"
+      }
+    ],
+    "LShift": [
+      {
+        "nativeName": "LShift",
+        "device": "Keyboard",
+        "key": "LShift",
+        "mode": "hold"
+      }
+    ],
+    "LWin": [
+      {
+        "nativeName": "LWin",
+        "device": "Keyboard",
+        "key": "LWin",
+        "mode": "hold"
+      }
+    ],
+    "RAlt": [
+      {
+        "nativeName": "RAlt",
+        "device": "Keyboard",
+        "key": "RAlt",
+        "mode": "hold"
+      }
+    ],
+    "RCtrl": [
+      {
+        "nativeName": "RCtrl",
+        "device": "Keyboard",
+        "key": "RCtrl",
+        "mode": "hold"
+      }
+    ],
+    "RShift": [
+      {
+        "nativeName": "RShift",
+        "device": "Keyboard",
+        "key": "RShift",
+        "mode": "hold"
+      }
+    ],
+    "RWin": [
+      {
+        "nativeName": "RWin",
+        "device": "Keyboard",
+        "key": "RWin",
+        "mode": "hold"
+      }
+    ]
+  },
   "modifiersFile": "src/Config/Input/F-100D/modifiers.lua",
   "modifiers": {
     "JOY_BTN13": {
       "nativeName": "JOY_BTN13",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "JOY_BTN13",
+      "label": "JOY_BTN13"
     },
     "LAlt": {
       "nativeName": "LAlt",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "LAlt",
+      "label": "LAlt"
     },
     "LCtrl": {
       "nativeName": "LCtrl",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "LCtrl",
+      "label": "LCtrl"
     },
     "LShift": {
       "nativeName": "LShift",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "LShift",
+      "label": "LShift"
     },
     "LWin": {
       "nativeName": "LWin",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "LWin",
+      "label": "LWin"
     },
     "RAlt": {
       "nativeName": "RAlt",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "RAlt",
+      "label": "RAlt"
     },
     "RCtrl": {
       "nativeName": "RCtrl",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "RCtrl",
+      "label": "RCtrl"
     },
     "RShift": {
       "nativeName": "RShift",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "RShift",
+      "label": "RShift"
     },
     "RWin": {
       "nativeName": "RWin",
-      "mode": "hold"
+      "mode": "hold",
+      "semanticModifier": "RWin",
+      "label": "RWin"
     }
   }
 }
