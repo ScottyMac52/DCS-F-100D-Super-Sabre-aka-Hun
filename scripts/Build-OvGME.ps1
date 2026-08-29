@@ -3,6 +3,9 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
+$commonRoot = if ($env:DCS_COMMON_ROOT) { $env:DCS_COMMON_ROOT } else { Join-Path $root '.dcs-common' }
+$uiLayerPackager = Join-Path $commonRoot 'scripts/package-ui-layer-input.mjs'
+if (-not (Test-Path $uiLayerPackager)) { throw "Missing shared UI Layer packager: $uiLayerPackager" }
 $dist = Join-Path $root 'dist'
 New-Item -ItemType Directory -Force -Path $dist | Out-Null
 $stage = Join-Path $dist "stage-$Version"
@@ -15,6 +18,10 @@ $modSrc = Join-Path $root 'src/Config/Input/F-100D/modifiers.lua'
 if (Test-Path $modSrc) {
   Copy-Item $modSrc (Join-Path $pkg "Config/Input/F-100D/modifiers.lua") -Force
 }
+New-Item -ItemType Directory -Force -Path (Join-Path $pkg 'Config/Input') | Out-Null
+$uiLayerDestination = Join-Path $pkg 'Config/Input/UiLayer'
+& node $uiLayerPackager $commonRoot (Join-Path $root 'src/Config/Input/F-100D/joystick') $uiLayerDestination
+if ($LASTEXITCODE -ne 0) { throw "Shared UI Layer packaging failed with exit code $LASTEXITCODE." }
 $kb = Join-Path $root 'kneeboard/F-100D'
 if (-not (Test-Path $kb)) { throw "Missing kneeboard PNG folder: $kb — run npm run build:kneeboard first." }
 New-Item -ItemType Directory -Force -Path (Join-Path $pkg "KNEEBOARD/F-100D") | Out-Null

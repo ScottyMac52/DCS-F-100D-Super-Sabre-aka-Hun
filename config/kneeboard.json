@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "aircraft": "F-100D",
+  "includeUiLayer": true,
   "profiles": {
     "moza-ab9": "src/Config/Input/F-100D/joystick/MOZA AB9 FFB Base {71DA6210-432E-11f1-8001-444553540000}.diff.lua",
     "tm-tpr": "src/Config/Input/F-100D/joystick/T-Pendular-Rudder {14ED3D40-3F58-11f1-8002-444553540000}.diff.lua",
