@@ -37,18 +37,17 @@ $expectedUiLayerProfiles = @(
 if ($expectedUiLayerProfiles.Count -eq 0) { throw 'No applicable shared UI Layer profiles were found for the F-100D hardware.' }
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$archiveBase = [System.IO.Path]::GetFileNameWithoutExtension($leaf)
 $archive = [System.IO.Compression.ZipFile]::OpenRead($zip)
 try {
   $entries = @($archive.Entries | ForEach-Object { $_.FullName.Replace('\', '/') })
-  $payloadPrefix = "$archiveBase/"
+  $payloadPrefix = "$pkgName/"
   $unexpected = @($entries | Where-Object {
     $_ -ne 'README.TXT' -and
     $_ -ne 'VERSION.TXT' -and
     -not $_.StartsWith($payloadPrefix, [System.StringComparison]::Ordinal)
   })
   if ($unexpected.Count -gt 0) {
-    throw "Invalid OVGME archive root. Expected '$archiveBase/' but found '$($unexpected[0])'."
+    throw "Invalid OVGME archive root. Expected '$pkgName/' but found '$($unexpected[0])'."
   }
   if (-not ($entries | Where-Object { $_.StartsWith("${payloadPrefix}Config/Input/F-100D/joystick/", [System.StringComparison]::Ordinal) })) {
     throw 'OVGME archive is missing the F-100D joystick profile payload.'
