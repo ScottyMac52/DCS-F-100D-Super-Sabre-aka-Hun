@@ -2,6 +2,24 @@
   "schemaVersion": 1,
   "aircraft": "F-100D",
   "includeUiLayer": true,
+  "summaryPages": [
+    {
+      "type": "summary",
+      "file": "00-F100D-CONTROL-OVERVIEW",
+      "title": "F-100D USED DEVICES",
+      "kicker": "PHYSICAL CONTROLLERS USED BY THIS CONFIGURATION",
+      "items": [
+        { "key": "AB9", "text": "MOZA AB9 FFB Base • pitch and roll axes", "accent": "blue" },
+        { "key": "MFD 1", "text": "TM Cougar MFD • standard OSB and rocker reference", "accent": "blue" },
+        { "key": "MFD 2", "text": "TM Cougar MFD • standard OSB and rocker reference", "accent": "blue" },
+        { "key": "TPR", "text": "TPR • rudder • left and right toe brakes", "accent": "blue" },
+        { "key": "TQS", "text": "Viper TQS • thrust • sight • speed brake • armament", "accent": "blue" },
+        { "key": "VKB", "text": "VKB F-14 Gunfighter • trim • weapons • shifted controls", "accent": "blue" },
+        { "key": "PTO2", "text": "CarrierAce • gear • flaps • chute • lights • jettison", "accent": "cyan" },
+        { "key": "ICP", "text": "ViperAce • armament • stations • sight • audio controls", "accent": "cyan" }
+      ]
+    }
+  ],
   "profiles": {
     "moza-ab9": "src/Config/Input/F-100D/joystick/MOZA AB9 FFB Base {71DA6210-432E-11f1-8001-444553540000}.diff.lua",
     "tm-tpr": "src/Config/Input/F-100D/joystick/T-Pendular-Rudder {14ED3D40-3F58-11f1-8002-444553540000}.diff.lua",
@@ -894,6 +912,26 @@
           }
         }
       ]
+    },
+    {
+      "file": "08-TM-MFD-1",
+      "includeUiLayer": true,
+      "deviceId": "tm-mfd",
+      "deviceInstance": "MFD1",
+      "title": "F16 MFD 1",
+      "kicker": "INSTANCE 1 • HARDWARE REFERENCE",
+      "modifierCallouts": {},
+      "controls": {}
+    },
+    {
+      "file": "09-TM-MFD-2",
+      "includeUiLayer": true,
+      "deviceId": "tm-mfd",
+      "deviceInstance": "MFD2",
+      "title": "F16 MFD 2",
+      "kicker": "INSTANCE 2 • HARDWARE REFERENCE",
+      "modifierCallouts": {},
+      "controls": {}
     }
   ],
   "semanticModifiers": {
