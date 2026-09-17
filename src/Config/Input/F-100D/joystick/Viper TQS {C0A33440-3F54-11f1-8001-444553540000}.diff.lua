@@ -42,12 +42,6 @@ local diff = {
       },
       ["name"] = "Speed Brake Switch - RETRACT else CENTER",
     },
-    ["d3012pnilunilcd10vd1vpnilvunil"] = {
-      ["removed"] = {
-        [1] = { ["key"] = "JOY_BTN5" },
-      },
-      ["name"] = "Afterburner - TOGGLE",
-    },
     ["d3013pnilu3013cd25vd1vpnilvu0"] = {
       ["added"] = {
         [1] = { ["key"] = "JOY_BTN16" },
@@ -83,6 +77,12 @@ local diff = {
         [1] = { ["key"] = "JOY_BTN42", ["reformers"] = { [1] = "LCtrl" } },
       },
       ["name"] = "Course Set Knob - CW",
+    },
+    ["d3012pnilunilcd10vd1vpnilvunil"] = {
+      ["removed"] = {
+        [1] = { ["key"] = "JOY_BTN5" },
+      },
+      ["name"] = "Afterburner - TOGGLE",
     },
   },
   ["axisDiffs"] = {

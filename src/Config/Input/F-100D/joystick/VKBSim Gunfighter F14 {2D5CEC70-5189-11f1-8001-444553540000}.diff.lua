@@ -33,6 +33,12 @@ local diff = {
       },
       ["name"] = "Nose Wheel Steering (NWS)",
     },
+    ["d3012pnilunilcd10vd1vpnilvunil"] = {
+      ["added"] = {
+        [1] = { ["key"] = "JOY_BTN3", ["reformers"] = { [1] = "JOY_BTN7" } },
+      },
+      ["name"] = "Afterburner - TOGGLE",
+    },
     ["d3014pnilu3014cd15vd1vpnilvu0"] = {
       ["added"] = {
         [1] = { ["key"] = "JOY_BTN3" },
@@ -81,12 +87,6 @@ local diff = {
       },
       ["name"] = "Mode Selector Knob - OFF",
     },
-    ["d3012pnilunilcd10vd1vpnilvunil"] = {
-      ["added"] = {
-        [1] = { ["key"] = "JOY_BTN3", ["reformers"] = { [1] = "JOY_BTN7" } },
-      },
-      ["name"] = "Afterburner - TOGGLE",
-    },
     ["d7pnilunilcdnilvdnilvpnilvunil"] = {
       ["added"] = {
         [1] = { ["key"] = "JOY_BTN5", ["reformers"] = { [1] = "JOY_BTN7" } },
@@ -95,17 +95,17 @@ local diff = {
     },
   },
   ["axisDiffs"] = {
-    ["a3055cd15"] = {
-      ["added"] = {
-        [1] = { ["key"] = "JOY_RX" },
-      },
-      ["name"] = "Missile Volume",
-    },
     ["a3013cd36"] = {
       ["added"] = {
         [1] = { ["key"] = "JOY_RX", ["reformers"] = { [1] = "JOY_BTN7" } },
       },
       ["name"] = "RHAW Audio Adjust",
+    },
+    ["a3055cd15"] = {
+      ["added"] = {
+        [1] = { ["key"] = "JOY_RX" },
+      },
+      ["name"] = "Missile Volume",
     },
   },
 }

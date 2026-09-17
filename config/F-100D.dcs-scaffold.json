@@ -10,7 +10,13 @@
     "outputDirectory": "C:\\Users\\vyper\\Source\\repos\\DCS-F-100D-Super-Sabre-aka-Hun",
     "displayName": "F-100D",
     "inputModuleId": "F-100D",
-    "kneeboardId": "F-100D"
+    "kneeboardId": "F-100D",
+    "commandSource": {
+      "type": "catalog-json",
+      "paths": [
+        "C:\\Users\\vyper\\Source\\repos\\DCS-F-100D-Super-Sabre-aka-Hun\\config\\F-100D-commands.json"
+      ]
+    }
   },
   "decisions": {
     "instanceRoles": {},
@@ -28,6 +34,7 @@
     },
     "removedProfiles": [
       "tm-warthog-throttle"
-    ]
+    ],
+    "authoredDevices": []
   }
 }
