@@ -21,10 +21,8 @@
   "decisions": {
     "instanceRoles": {},
     "semanticModifiers": {
-      "JOY_BTN13": "JOY_BTN13",
       "JOY_BTN7": "JOY_BTN7",
       "LAlt": "LAlt",
-      "LCtrl": "LCtrl",
       "LShift": "LShift",
       "LWin": "LWin",
       "RAlt": "RAlt",
@@ -34,6 +32,65 @@
     },
     "removedProfiles": [
       "tm-warthog-throttle"
+    ],
+    "authoredModifiers": [
+      {
+        "name": "JOY_BTN7",
+        "device": "VKBSim Gunfighter F14 {2D5CEC70-5189-11f1-8001-444553540000}",
+        "key": "JOY_BTN7",
+        "mode": "hold",
+        "semanticModifier": "JOY_BTN7",
+        "deviceId": "vkb-f14-gunfighter"
+      },
+      {
+        "name": "LAlt",
+        "device": "Keyboard",
+        "key": "LAlt",
+        "mode": "hold",
+        "semanticModifier": "LAlt"
+      },
+      {
+        "name": "LShift",
+        "device": "Keyboard",
+        "key": "LShift",
+        "mode": "hold",
+        "semanticModifier": "LShift"
+      },
+      {
+        "name": "LWin",
+        "device": "Keyboard",
+        "key": "LWin",
+        "mode": "hold",
+        "semanticModifier": "LWin"
+      },
+      {
+        "name": "RAlt",
+        "device": "Keyboard",
+        "key": "RAlt",
+        "mode": "hold",
+        "semanticModifier": "RAlt"
+      },
+      {
+        "name": "RCtrl",
+        "device": "Keyboard",
+        "key": "RCtrl",
+        "mode": "hold",
+        "semanticModifier": "RCtrl"
+      },
+      {
+        "name": "RShift",
+        "device": "Keyboard",
+        "key": "RShift",
+        "mode": "hold",
+        "semanticModifier": "RShift"
+      },
+      {
+        "name": "RWin",
+        "device": "Keyboard",
+        "key": "RWin",
+        "mode": "hold",
+        "semanticModifier": "RWin"
+      }
     ],
     "authoredDevices": []
   }

@@ -304,29 +304,29 @@
           }
         },
         {
-          "id": "LCtrl",
-          "file": "06-VIPER-TQS-MISSION-PACK-LCtrl",
-          "title": "Viper TQS • LCtrl",
+          "id": "JOY_BTN7",
+          "file": "06-VIPER-TQS-MISSION-PACK-JOY-BTN7",
+          "title": "Viper TQS • JOY_BTN7",
           "activators": [
-            "LCtrl"
+            "JOY_BTN7"
           ],
           "controls": {
             "viper-tqs-button-43": {
               "profile": "viper-tqs-mission-pack",
               "key": "JOY_BTN43",
               "command": "dnilp3011unilcd3vdnilvp-0.75vunil",
-              "labelId": "binding-ce2fa33f798bcead",
+              "labelId": "binding-f73c148437821b95",
               "modifiers": [
-                "LCtrl"
+                "JOY_BTN7"
               ]
             },
             "viper-tqs-button-42": {
               "profile": "viper-tqs-mission-pack",
               "key": "JOY_BTN42",
               "command": "dnilp3011unilcd3vdnilvp0.75vunil",
-              "labelId": "binding-d065a85cb84a1b70",
+              "labelId": "binding-232781ba407d7694",
               "modifiers": [
-                "LCtrl"
+                "JOY_BTN7"
               ]
             }
           }
@@ -590,20 +590,20 @@
           }
         },
         {
-          "id": "LCtrl",
-          "file": "08-WINCTRL-PTO2-LCtrl",
-          "title": "WINCTRL CarrierAce PTO 2 • LCtrl",
+          "id": "JOY_BTN7",
+          "file": "08-WINCTRL-PTO2-JOY-BTN7",
+          "title": "WINCTRL CarrierAce PTO 2 • JOY_BTN7",
           "activators": [
-            "LCtrl"
+            "JOY_BTN7"
           ],
           "controls": {
             "pto2-button-10": {
               "profile": "winctrl-pto2",
               "key": "JOY_BTN10",
               "command": "d3012pnilu3012cd9vd1vpnilvu0",
-              "labelId": "binding-059044fbd4e63d8b",
+              "labelId": "binding-86f2b8acda4bfeb5",
               "modifiers": [
-                "LCtrl"
+                "JOY_BTN7"
               ]
             }
           }
@@ -1027,11 +1027,11 @@
     }
   ],
   "semanticModifiers": {
-    "JOY_BTN13": [
+    "JOY_BTN7": [
       {
-        "nativeName": "JOY_BTN13",
-        "device": "F16 MFD 1 {51FA60C0-CB32-11ed-800B-444553540000}",
-        "key": "JOY_BTN13",
+        "nativeName": "JOY_BTN7",
+        "device": "VKBSim Gunfighter F14 {2D5CEC70-5189-11f1-8001-444553540000}",
+        "key": "JOY_BTN7",
         "mode": "hold"
       }
     ],
@@ -1040,14 +1040,6 @@
         "nativeName": "LAlt",
         "device": "Keyboard",
         "key": "LAlt",
-        "mode": "hold"
-      }
-    ],
-    "LCtrl": [
-      {
-        "nativeName": "LCtrl",
-        "device": "Keyboard",
-        "key": "LCtrl",
         "mode": "hold"
       }
     ],
@@ -1098,32 +1090,20 @@
         "key": "RWin",
         "mode": "hold"
       }
-    ],
-    "JOY_BTN7": [
-      {
-        "nativeName": "JOY_BTN7",
-        "device": "VKBSim Gunfighter F14 {2D5CEC70-5189-11f1-8001-444553540000}",
-        "key": "JOY_BTN7",
-        "mode": "hold"
-      }
     ]
   },
   "modifiersFile": "src/Config/Input/F-100D/modifiers.lua",
   "modifiers": {
-    "JOY_BTN13": {
-      "nativeName": "JOY_BTN13",
+    "JOY_BTN7": {
+      "nativeName": "JOY_BTN7",
       "mode": "hold",
-      "semanticModifier": "JOY_BTN13"
+      "semanticModifier": "JOY_BTN7",
+      "deviceId": "vkb-f14-gunfighter"
     },
     "LAlt": {
       "nativeName": "LAlt",
       "mode": "hold",
       "semanticModifier": "LAlt"
-    },
-    "LCtrl": {
-      "nativeName": "LCtrl",
-      "mode": "hold",
-      "semanticModifier": "LCtrl"
     },
     "LShift": {
       "nativeName": "LShift",
@@ -1154,12 +1134,6 @@
       "nativeName": "RWin",
       "mode": "hold",
       "semanticModifier": "RWin"
-    },
-    "JOY_BTN7": {
-      "nativeName": "JOY_BTN7",
-      "mode": "hold",
-      "semanticModifier": "JOY_BTN7",
-      "deviceId": "vkb-f14-gunfighter"
     }
   },
   "labels": {
@@ -1182,8 +1156,8 @@
     "binding-bf32dcaba0a6155b": "Armmament-",
     "binding-f2550e7a441e57c4": "Armmament+",
     "binding-d854c9c96d407552": "MANUAL",
-    "binding-ce2fa33f798bcead": "Course Set Knob - CCW",
-    "binding-d065a85cb84a1b70": "Course Set Knob - CW",
+    "binding-f73c148437821b95": "Course CCW",
+    "binding-232781ba407d7694": "Course CW",
     "binding-ac71f5c696835751": "Thrust",
     "binding-49d4bfd206309226": "Zoom View",
     "binding-5fb79e836047d166": "Range",
@@ -1218,7 +1192,7 @@
     "binding-ffb077e4bfee16be": "Anti-Skid OFF",
     "binding-cd8cd51a7d47c4d7": "Anti-Skid ON",
     "binding-d6be93f94a0fd7d2": "EJett",
-    "binding-059044fbd4e63d8b": "Anti-Skid TST",
+    "binding-86f2b8acda4bfeb5": "ASkid TST",
     "binding-456953db330375f3": "Taxi/LND Lghts ON",
     "binding-95975a6d97fb3648": "Warning System Cutout",
     "binding-4cb0423492d2861b": "EJett CVR UNLOCK",

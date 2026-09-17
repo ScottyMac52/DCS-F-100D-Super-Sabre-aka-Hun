@@ -80,6 +80,9 @@ local diff = {
     },
     ["d3012pnilu3012cd9vd1vpnilvu0"] = {
       ["added"] = {
+        [1] = { ["key"] = "JOY_BTN10", ["reformers"] = { [1] = "JOY_BTN7" } },
+      },
+      ["removed"] = {
         [1] = { ["key"] = "JOY_BTN10", ["reformers"] = { [1] = "LCtrl" } },
       },
       ["name"] = "Anti-Skid Switch - TEST",

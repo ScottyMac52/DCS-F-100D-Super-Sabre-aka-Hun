@@ -31,9 +31,9 @@ This guide is generated from the effective DCS profile used by F-100D.
 | `JOY_RX` | Range | — |
 | `JOY_RY` | UHF Volume | — |
 
-#### Modifier layer: `LCtrl`
+#### Modifier layer: `JOY_BTN7`
 
 | Physical input | Assignment | Axis/filter settings |
 | --- | --- | --- |
-| `LCtrl + JOY_BTN43` | Course Set Knob - CCW | — |
-| `LCtrl + JOY_BTN42` | Course Set Knob - CW | — |
+| `JOY_BTN7 + JOY_BTN43` | Course CCW | — |
+| `JOY_BTN7 + JOY_BTN42` | Course CW | — |

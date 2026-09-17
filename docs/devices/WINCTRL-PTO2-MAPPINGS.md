@@ -32,8 +32,8 @@ This guide is generated from the effective DCS profile used by F-100D.
 | `JOY_BTN2` | Warning System Cutout | — |
 | `JOY_BTN17` | EJett CVR UNLOCK | — |
 
-#### Modifier layer: `LCtrl`
+#### Modifier layer: `JOY_BTN7`
 
 | Physical input | Assignment | Axis/filter settings |
 | --- | --- | --- |
-| `LCtrl + JOY_BTN10` | Anti-Skid TST | — |
+| `JOY_BTN7 + JOY_BTN10` | ASkid TST | — |

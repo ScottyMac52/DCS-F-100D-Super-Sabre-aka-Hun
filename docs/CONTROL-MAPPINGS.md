@@ -11,9 +11,9 @@ This reference is generated from the effective DCS `.diff.lua` profiles used by 
 | [F16 MFD 3](devices/TM-MFD-3-MAPPINGS.md) | `F16 MFD 3 {C5BE49A0-2342-11ee-8001-444553540000}.diff.lua` | Base | 1 |
 | [MOZA AB9 FFB Base](devices/MOZA-AB9-MAPPINGS.md) | `MOZA AB9 FFB Base {71DA6210-432E-11f1-8001-444553540000}.diff.lua` | Base | 2 |
 | [T-Pendular-Rudder](devices/TM-TPR-MAPPINGS.md) | `T-Pendular-Rudder {14ED3D40-3F58-11f1-8002-444553540000}.diff.lua` | Base | 3 |
-| [Viper TQS](devices/VIPER-TQS-MISSION-PACK-MAPPINGS.md) | `Viper TQS {C0A33440-3F54-11f1-8001-444553540000}.diff.lua` | Base, LCtrl | 17 |
+| [Viper TQS](devices/VIPER-TQS-MISSION-PACK-MAPPINGS.md) | `Viper TQS {C0A33440-3F54-11f1-8001-444553540000}.diff.lua` | Base, JOY_BTN7 | 17 |
 | [VKBSim Gunfighter F14](devices/VKB-F14-GUNFIGHTER-MAPPINGS.md) | `VKBSim Gunfighter F14 {2D5CEC70-5189-11f1-8001-444553540000}.diff.lua` | Base, JOY_BTN7 | 17 |
-| [WINCTRL CarrierAce PTO 2](devices/WINCTRL-PTO2-MAPPINGS.md) | `WINCTRL CarrierAce PTO 2 {19B7D090-6120-11f0-8001-444553540000}.diff.lua` | Base, LCtrl | 17 |
+| [WINCTRL CarrierAce PTO 2](devices/WINCTRL-PTO2-MAPPINGS.md) | `WINCTRL CarrierAce PTO 2 {19B7D090-6120-11f0-8001-444553540000}.diff.lua` | Base, JOY_BTN7 | 17 |
 | [WINCTRL ViperAce ICP](devices/WINCTRL-ICP-MAPPINGS.md) | `WINCTRL ViperAce ICP {3731E2E0-4D98-11f1-8001-444553540000}.diff.lua` | Base, JOY_BTN7 | 53 |
 
 ## Reading the tables
@@ -120,12 +120,12 @@ This reference is generated from the effective DCS `.diff.lua` profiles used by 
 | `JOY_RX` | Range | — |
 | `JOY_RY` | UHF Volume | — |
 
-#### Modifier layer: `LCtrl`
+#### Modifier layer: `JOY_BTN7`
 
 | Physical input | Assignment | Axis/filter settings |
 | --- | --- | --- |
-| `LCtrl + JOY_BTN43` | Course Set Knob - CCW | — |
-| `LCtrl + JOY_BTN42` | Course Set Knob - CW | — |
+| `JOY_BTN7 + JOY_BTN43` | Course CCW | — |
+| `JOY_BTN7 + JOY_BTN42` | Course CW | — |
 
 ### VKBSim Gunfighter F14
 
@@ -189,11 +189,11 @@ This reference is generated from the effective DCS `.diff.lua` profiles used by 
 | `JOY_BTN2` | Warning System Cutout | — |
 | `JOY_BTN17` | EJett CVR UNLOCK | — |
 
-#### Modifier layer: `LCtrl`
+#### Modifier layer: `JOY_BTN7`
 
 | Physical input | Assignment | Axis/filter settings |
 | --- | --- | --- |
-| `LCtrl + JOY_BTN10` | Anti-Skid TST | — |
+| `JOY_BTN7 + JOY_BTN10` | ASkid TST | — |
 
 ### WINCTRL ViperAce ICP
 

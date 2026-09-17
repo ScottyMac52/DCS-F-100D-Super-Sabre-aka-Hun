@@ -68,12 +68,18 @@ local diff = {
     },
     ["dnilp3011unilcd3vdnilvp-0.75vunil"] = {
       ["added"] = {
+        [1] = { ["key"] = "JOY_BTN43", ["reformers"] = { [1] = "JOY_BTN7" } },
+      },
+      ["removed"] = {
         [1] = { ["key"] = "JOY_BTN43", ["reformers"] = { [1] = "LCtrl" } },
       },
       ["name"] = "Course Set Knob - CCW",
     },
     ["dnilp3011unilcd3vdnilvp0.75vunil"] = {
       ["added"] = {
+        [1] = { ["key"] = "JOY_BTN42", ["reformers"] = { [1] = "JOY_BTN7" } },
+      },
+      ["removed"] = {
         [1] = { ["key"] = "JOY_BTN42", ["reformers"] = { [1] = "LCtrl" } },
       },
       ["name"] = "Course Set Knob - CW",
